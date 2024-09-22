@@ -1,0 +1,68 @@
+//Formar un diagrama para sumar los n términos de una sucesión geométrica, 
+siendo el primer término una variable a y una razón r.// 
+
+Inicio
+    Definir a, r, n, suma, temp Como Real
+
+    Escribir "Ingrese el primer término a: "
+    Leer a
+    Escribir "Ingrese la razón r: "
+    Leer r
+    Escribir "Ingrese el número de términos n: "
+    Leer n
+    inicializar suma = 0
+    temp = N
+
+    Mientras N > 0 Hacer
+        suma = suma + a
+        a = a * r
+        N = N - 1
+    Fin Mientras
+       Escribir "La suma de la sucesión geométrica es: ", suma
+Fin Proceso
+
+//calcular la el máximo número n ingresado por teclado.//
+
+Inicio
+    Definir máximo, número, resultado Como Real
+
+    Escribir "Ingrese un número: "
+    Leer número
+    máximo = número
+    resultado = número
+
+
+    Mientras NUMERO <> 0 Hacer
+        Escribir "Ingrese otro número o 0 para terminar: "
+        Leer NUMERO
+        
+            Si número > máximo Entonces
+            máximo = número
+            resultado = máximo
+        FinSi
+    FinMientras
+
+      Escribir "El número máximo ingresado es: ", RESULTADO
+FinProceso
+
+//crear un diagrama de flujo en el cual se guarden las n calificaciones de  un alumno y obtener el promedio de ese alumno.//
+
+Inicio
+    Definir n, i, calificacion, suma, promedio como Real
+    
+    Inicializar  suma = 0
+
+    Escribir "Ingrese el número de calificaciones: "
+    Leer n
+
+     Para i = 1 Hasta n Con Paso 1 Hacer
+        Escribir "Ingrese la calificación ", i, ":"
+        Leer calificación
+        suma = suma + calificacion 
+    FinPara
+
+        promedio = suma / n
+
+      Escribir "El promedio final del alumno es: ", promedio
+FinProceso
+
